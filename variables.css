@@ -1,0 +1,7 @@
+:root{
+    --buttons-color: hsl(322, 100%, 66%);
+    --form-active-color: hsl(321, 100%, 78%);
+    --footer-color: hsl(192, 100%, 9%);
+    --background-color: hsl(207, 100%, 98%);
+    --form-msg-color: hsl(0, 100%, 63%);
+}

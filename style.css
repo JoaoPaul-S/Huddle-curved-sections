@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+
+@media(min-width: 801px){
+    body{
+        background-color: white;
+        display: grid;
+        grid-template-areas: 
+        "hero"
+        "main"
+        "contact";
+    }
+    
+    h1,h2{
+        font-family: "Poppins", sans-serif;
+        text-transform: capitalize;
+        color: var(--footer-color);
+    }
+    
+    p,span{
+        font-family: "Open Sans", sans-serif;
+        color: var(--hero-color);
+    }
+    
+    a{
+        font-family: "Poppins", sans-serif;
+        text-transform: capitalize;
+        color: var(--background-color);
+        font-weight: 600;
+    }
+    
+    /* HERO */
+    
+    .hero{
+        grid-area: hero;
+        background-color: white;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        min-height: 100vh;
+    }
+    
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero .logo{
+        display: flex;
+        justify-content: space-between;
+        padding: 45px 60px;
+    }
+    
+    .hero .logo img{
+        width: 200px;
+        height: 30px;
+    }
+    
+    .hero .logo button{
+        width: 130px;
+        height: 35px;
+        border: 1px solid hsl(322, 100%, 66%);
+        border-radius: 50px;
+        background: none;
+        box-shadow: 0px 0px 5px rgb(189, 188, 188);
+    }
+    
+    .hero .logo button a{
+        color: hsl(322, 100%, 66%);
+        font-family: "Open Sans", sans-serif;
+        font-weight: 500;
+        font-size: 0.85rem;
+    }
+    
+    .hero .logo button:hover{
+        opacity: 0.6;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .copy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10rem;
+    }
+    
+    .copy-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+    
+    .copy-text h1{
+        font-size: 2.8rem;
+    }
+    
+    .copy-text p{
+        font-size: 1.15rem;
+        color: var(--footer-color);
+        text-align: center;
+        padding: 0px 380px;
+        margin-bottom: 5px;
+    }
+    
+    .copy-text button{
+        width: 300px;
+        height: 60px;
+        border-radius: 50px;
+        background-color: var(--buttons-color);
+        box-shadow: 0px 5px 10px rgb(189, 188, 188);
+    }
+    
+    .copy-text button:hover{
+        opacity: 0.6;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .copy-text button a{
+        color: var(--background-color);
+        font-size: 0.9rem;
+    }
+    
+    .hero .copy img{
+        width: 950px;
+        height: 700px;
+        margin-top: 7rem;
+    }
+    
+    .results ul{
+        display: flex;
+        gap: 20rem;
+    }
+    
+    .results ul li .result-i{
+        width: 46px;
+        height: 40px;
+    }
+    
+    .results ul li .r-text{
+        text-align: center;
+        text-transform: capitalize;
+    }
+    
+    .results ul li h1{
+        font-size: 5rem;
+    }
+    
+    .results ul li span{
+        color: rgb(189, 188, 188);
+        font-size: 1.5rem;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    
+    /* MAIN */
+    
+    main{
+        padding: 160px 0px 100px;
+        grid-area: main;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        min-height: 100vh;
+    }
+    
+    main .main-content{
+        background-color:var(--background-color);
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        padding: 0px 120px 0px 100px;
+        border-radius: 10px;
+    }
+    
+    main .main-content div{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    main .main-content div h2{
+        font-size: 1.65rem;
+    }
+    
+    main .main-content div p{
+        padding-right: 165px;
+    }
+    
+    main section:first-child .main-content div p{
+        padding-right: 190px;
+    }
+    
+    main section:nth-child(2) .main-content{
+        background-color: white;
+    }
+    
+    main section:nth-child(2) .main-content div{
+        padding-left: 120px;
+    }
+    
+    main section:nth-child(2) .main-content div p{
+        padding-right: 30px;
+    }
+    
+    main section img{
+        width: 400px;
+        height: 300px;
+    }
+    
+    body main section .bg-section-top-mobile-1,
+    body main section .bg-section-top-mobile-2 {
+      margin-bottom: -1.5rem;
+      width: 100%;
+      height: 160px;
+    }
+    body main section .bg-section-bottom-mobile-1,
+    body main section .bg-section-bottom-mobile-2 {
+        margin-top: -0.1rem;
+        width: 100%;
+        height: 160px;
+    }
+    
+    .cta-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    .cta-content{
+        background-color: white;
+        width: 700px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .cta-box h2{
+        text-transform: capitalize;
+        font-size: 2rem;
+    }
+    
+    .cta-box button{
+        width: 400px;
+        height: 70px;
+        border-radius: 50px;
+        background-color: var(--buttons-color);
+        box-shadow: 0px 5px 10px rgb(189, 188, 188);
+    }
+    
+    .cta-box button:hover{
+        opacity: 0.6;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .cta-box button a{
+        color: var(--background-color);
+        font-size: 1.2rem;
+    }
+    
+    /* BG-FOOTER */
+    
+    .bg-footer{
+        grid-area: bg-footer;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+    }
+    
+    /* FOOTER */
+    
+    footer{
+        grid-area: contact;
+        background-color: var(--footer-color);
+        display: flex;
+    }
+    
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        padding: 250px 120px 70px;
+        gap: 40px;
+        z-index: 1;
+    }
+    
+    .footer-content .f-logo{
+        width: 200px;
+        height: 30px;
+    }
+    
+    .footer-content span .icons p{
+        color: var(--background-color);
+    }
+    
+    .footer-content .icons p:first-child{
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+        padding-inline-end: 50px;
+        font-weight: 600;
+    }
+    
+    .footer-content .icons p:nth-child(2){
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+    
+    .footer-content .icons p:last-child{
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+    
+    .footer-content .icons p:nth-child(2)::before{
+        content: '';
+        background-image: url(Images/icon-phone.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin-right: 15px;
+    }
+    
+    .footer-content .icons p:last-child::before{
+        content: '';
+        background-image: url(Images/icon-email.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 20px;
+        height: 16px;
+        display: inline-block;
+        margin-right: 15px;
+        max-height: 900px;
+    }
+    
+    .footer-content span:first-child{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 350px;
+    }
+    
+    .footer-content .icons{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-content div{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-content .social{
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+    
+    .fa-twitter-square{
+        color: var(--background-color);
+        font-size: 2rem;
+        margin-top: 35px;
+    }
+    
+    .fa-twitter-square:hover{
+        color: cyan;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .fa-facebook-square{
+        color: var(--background-color);
+        font-size: 2rem;
+        margin-top: 35px;
+    }
+    
+    .fa-facebook-square:hover{
+        color: blue;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .fa-instagram{
+        color: var(--background-color);
+        font-size: 2rem;
+        margin-top: 35px;
+    }
+    
+    .fa-instagram:hover{
+        color: var(--buttons-color);
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .newsletter{
+        padding: 250px 120px 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        z-index: 1;
+    }
+    
+    .cta h3{
+        font-family: "Open Sans", sans-serif;
+        text-transform: uppercase;
+        color: var(--background-color);
+        margin-bottom: 20px;
+        letter-spacing: 0.1rem;
+    }
+    
+    .cta p{
+        font-family: "Open Sans", sans-serif;
+        color: var(--background-color);
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding-inline-end: 150px;
+        line-height: 1.3rem;
+    }
+    
+    .newsletter .input input:first-child{
+        width: 300px;
+        height: 40px;
+        border-radius: 5px;
+        margin-right: 30px;
+        font-family: "Poppins", sans-serif;
+        text-transform: capitalize;
+        font-size: 0.8rem;
+        text-align: start;
+    }
+    
+    .newsletter .input input:last-child{
+        width: 120px;
+        height: 40px;
+        background-color: var(--buttons-color);
+        border-radius: 5px;
+        color: var(--background-color);
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        text-transform: capitalize;
+        font-size: 0.8rem;
+    }
+    
+    .newsletter .input input:last-child:hover{
+        background-color: var(--form-active-color);
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+}
